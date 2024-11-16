@@ -1,5 +1,5 @@
 from launch import LaunchDescription
-from launch_ros.action import Node
+from launch_ros.actions import Node
 from launch.actions import DeclareLaunchArgument, LogInfo
 from launch.substitutions import LaunchConfiguration
 from launch.conditions import IfCondition
