@@ -47,7 +47,7 @@ class BatteryActionServer(Node):
 
 
 def main(args=None):
-    rclcp.init(args=args)
+    rclpy.init(args=args)
     action_server = BatteryActionServer()
     executor = MultiThreadedExecutor()
     executor.add_node(action_server)

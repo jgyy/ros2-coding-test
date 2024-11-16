@@ -43,7 +43,7 @@ class BatteryActionClient(Node):
 
 
 def main(args=None):
-    rclcp.init(args=args)
+    rclpy.init(args=args)
     action_client = BatteryActionClient()
     action_client.send_goal(90.0)
     rclpy.spin(action_client)
