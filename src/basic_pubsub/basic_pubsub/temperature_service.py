@@ -16,7 +16,7 @@ class TemperatureConversionService(Node):
                 response.converted_temperature = request.temperature
                 response.status = 'success: units are the same'
                 return response
-            if request.input_unit == 'celsius' and request.output_unit = 'fahrenheit':
+            if request.input_unit == 'celsius' and request.output_unit == 'fahrenheit':
                 response.converted_temperature = (request.temperature * 9 / 5) + 32
                 response.status = 'success: converted C to F'
             elif request.input_unit == 'fahrenheit' and request.output_unit == 'celsius':

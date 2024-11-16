@@ -1,6 +1,8 @@
 # ros2_interview_ws
 
-ros2_interview_ws
+Robot Operating System 2 interview workspace
+
+## Test 1
 
 ```sh
 # Create workspace
@@ -17,8 +19,8 @@ cd ~/ros2_interview_ws
 colcon build
 
 # Source the workspace
-source install/setup.bash
+source install/setup.zsh
 
 # Launch the system
-ros2 launch system.launch.py
+ros2 launch basic_pubsub system.launch.py
 ```
