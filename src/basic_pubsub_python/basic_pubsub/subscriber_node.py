@@ -10,7 +10,7 @@ class TemperatureSubscriber(Node):
             TempReading, 'temperature', self.listener_callback, 10)
         self.get_logger().info('Temperature subscriber node initialized')
 
-    def listener_callback(self):
+    def listener_callback(self, msg: TempReading):
         self.get_logger().info(
             f'Received temperature: {msg.temperature} {msg.unit} at timestamp {msg.timestamp}')
 
