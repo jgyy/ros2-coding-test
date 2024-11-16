@@ -1,0 +1,6 @@
+string input_unit
+string output_unit
+float32 temperature
+---
+float32 converted_temperature
+string status
