@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from basic_pubsub.msg import TempReading
+from basic_pubsub_interfaces.msg import TempReading
 
 
 class TemperatureSubscriber(Node):
@@ -16,7 +16,7 @@ class TemperatureSubscriber(Node):
 
 
 def main(args=None):
-    rclcp.init(args=args)
+    rclpy.init(args=args)
     node = TemperatureSubscriber()
     try:
         rclpy.spin(node)

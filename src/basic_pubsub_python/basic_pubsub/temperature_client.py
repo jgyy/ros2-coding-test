@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from basic_pubsub.srv import TempConvert
+from basic_pubsub_interfaces.srv import TempConvert
 import sys
 
 
@@ -20,7 +20,7 @@ class TemperatureConversionClient(Node):
 
 
 def main(args=None):
-    rclcp.init(args=args)
+    rclpy.init(args=args)
     client = TemperatureConversionClient()
     future = client.send_request('celsius', 'fahrenheit', 25.0)
     rclpy.spin_until_future_complete(client, future)

@@ -3,7 +3,7 @@ float32 target_battery_level
 ---
 # Result
 float32 final_battery_level
-duration total_charging_time
+float32 total_charging_time
 ---
 # Feedback
 float32 current_battery_level

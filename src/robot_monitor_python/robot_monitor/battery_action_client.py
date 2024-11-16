@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.action import ActionClient
 from rclpy.node import Node
-from robot_monitor.action import Charge
+from robot_monitor_interfaces.action import Charge
 import sys
 
 

@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from basic_pubsub.srv import TempConvert
+from basic_pubsub_interfaces.srv import TempConvert
 
 
 class TemperatureConversionService(Node):
@@ -32,7 +32,7 @@ class TemperatureConversionService(Node):
 
 
 def main(args=None):
-    rclcp.init(args=args)
+    rclpy.init(args=args)
     node = TemperatureConversionService()
     try:
         rclpy.spin(node)
